@@ -4,7 +4,7 @@ function helloworld(){
 function saveEinkaeufer(){
   var key = "hi"
   var data = "hello world"
-  var name = "name"
+  var name = "nameEinkaeufer"
   var namedata = document.getElementById('nameEinkaeufer').value
   window.localStorage.setItem(key,data)
   window.localStorage.setItem(name,namedata)
@@ -12,7 +12,7 @@ function saveEinkaeufer(){
 function saveFaulerTyp(){
   var key = "hi"
   var data = "hello world"
-  var name = "name"
+  var name = "nameFaulerTyp"
   var namedata = document.getElementById('nameFaulerTyp').value
   window.localStorage.setItem(key,data)
   window.localStorage.setItem(name,namedata)
