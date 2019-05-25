@@ -129,20 +129,17 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group col-md-4">
-                  <input type="uhrzeit" class="form-control" name="Uhrzeit" id="Uhrzeit" placeholder="Uhrzeit" data-rule="Uhrzeit" data-msg="Gibe eine uhrzeit an" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group col-md-4">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="uhrzeit" class="form-control" name="Uhrzeit" id="zeitAuftrag" placeholder="Uhrzeit" data-rule="Uhrzeit" data-msg="Gibe eine uhrzeit an" />
                   <div class="validation"></div>
                 </div>
 
               <div class="form-group col-md-4">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Einkaufsorte" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="ladenAuftrag" placeholder="Einkaufsladen" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validation"></div>
               </div>
-          
-              <div class="text-center"><button type="submit" onclick="saveEinkaeufer()">Send Message</button></div>
+
+              <div class="text-center"><button type="submit" onclick="saveAuftrag()">Send Message</button></div>
+              </div>
             </form>
 
           </div>
@@ -186,10 +183,7 @@
                   <div class="validation"></div>
                 </div>
 
-                <div class="form-group col-md-4">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
+
               <div class="form-group col-md-4">
                 <textarea class="form-control" name="Einkaufsliste"  data-rule="required" data-msg="Please write something for us" placeholder="Einkaufsliste"></textarea>
                 <div class="validation"></div>
