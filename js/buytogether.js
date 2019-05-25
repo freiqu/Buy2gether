@@ -6,6 +6,7 @@ function helloworld(){
   console.log("hallo welt");
 }
 function saveAuftrag(){
+  document.getElementById("a").setItem("pimmel")
   var inserat = {}
   inserat.nameEinkaeufer = document.getElementById("nameEinkaeufer").value
   inserat.zeitAuftrag = document.getElementById("zeitAuftrag").value
@@ -23,7 +24,6 @@ function sendeAuftrag(){
   console.log("jetzt würde diese Liste an den Host geschickt werden:")
   console.log(inserat)
 }
-
 function read(){
   var key = "hi"
   console.log(window.localStorage.getItem(key))
