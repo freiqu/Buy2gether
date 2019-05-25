@@ -2,7 +2,7 @@ var auftragid = 0
 
 
 function login(){
-  
+
 }
 
 function helloworld(){
@@ -24,8 +24,10 @@ function sendeAuftrag(){
   inserat.nameAuftraggeber = document.getElementById("nameAuftraggeber").value
   inserat.einkaufslisteAuftraggeber = document.getElementById("einkaufslisteAuftraggeber").value
 
+  var reinda = "<b>" + inserat.nameAuftraggeber + "</b>"
   var item = document.createElement('li')
-  item.innerHtml='<b>'+inserat.nameAuftraggeber+'</b>'
+  item.innerHtml=reinda
+  document.getElementById("EinkaeuferAusgabe").appendChild(item);
 
   console.log("jetzt würde diese Liste an den Host geschickt werden:")
   console.log(inserat)
