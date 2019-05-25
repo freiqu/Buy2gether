@@ -187,7 +187,7 @@
             <div id="errormessage"></div>
             <form action="" method="post" role="form" class="contactForm">
                 <div class="form-group col-md-4">
-                  <input type="text" name="name" class="form-control" id="nameFaulerTyp" placeholder="Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                  <input type="text" name="name" class="form-control" id="nameAuftraggeber" placeholder="Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
                   <div class="validation"></div>
                 </div>
                 <table>
@@ -198,7 +198,7 @@
                 </table>
 
               <div class="form-group col-md-4">
-                <textarea class="form-control" name="Einkaufsliste"  data-rule="required" data-msg="Please write something for us" placeholder="Einkaufsliste"></textarea>
+                <textarea class="form-control" name="Einkaufsliste"  data-rule="required" id="einkaufslisteAuftraggeber" data-msg="Please write something for us" placeholder="Einkaufsliste"></textarea>
                 <div class="validation"></div>
               </div>
               <div class="text-center"><button type="submit" onclick="sendeAuftrag()">Send Message</button></div>
