@@ -5,8 +5,7 @@ var auftragid = 0
 function helloworld(){
   console.log("hallo welt");
 }
-function saveAuftrag(){
-  document.getElementById("a").setItem("pimmel")
+function saveAuftrag(){s
   var inserat = {}
   inserat.nameEinkaeufer = document.getElementById("nameEinkaeufer").value
   inserat.zeitAuftrag = document.getElementById("zeitAuftrag").value
