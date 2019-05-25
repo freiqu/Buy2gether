@@ -1,6 +1,9 @@
 var auftragid = 0
 
 
+function login(){
+  
+}
 
 function helloworld(){
   console.log("hallo welt");
