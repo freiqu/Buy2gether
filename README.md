@@ -1,2 +1,2 @@
 # Buy2gether
-ja lol ey
+Projekt zur Beseitigung unnötiger Autofahrten zum Einkaufen
