@@ -2,19 +2,13 @@ function helloworld(){
   console.log("hallo welt");
 }
 function saveEinkaeufer(){
-  var key = "hi"
-  var data = "hello world"
   var name = "nameEinkaeufer"
   var namedata = document.getElementById('nameEinkaeufer').value
-  window.localStorage.setItem(key,data)
   window.localStorage.setItem(name,namedata)
 }
 function saveFaulerTyp(){
-  var key = "hi"
-  var data = "hello world"
   var name = "nameFaulerTyp"
   var namedata = document.getElementById('nameFaulerTyp').value
-  window.localStorage.setItem(key,data)
   window.localStorage.setItem(name,namedata)
 }
 function read(){
