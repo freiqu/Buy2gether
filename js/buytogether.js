@@ -14,19 +14,44 @@ function saveAuftrag(){
   inserat.zeitAuftrag = document.getElementById("zeitAuftrag").value
   inserat.ladenAuftrag = document.getElementById("ladenAuftrag").value
   window.localStorage.setItem(auftragid,inserat)
-  auftragid = auftragid + 1
+
   console.log("jetzt würde diese Liste an den Host geschickt werden:")
   console.log(inserat)
+  var obj = {}
+  //obj = window.localStorage.getItem(auftragid)
+  obj = inserat
+
+  console.log("test:")
+  console.log(obj)
+
+  var name = obj.nameEinkaeufer
+  var zeit = obj.zeitAuftrag
+  var laden = obj.ladenAuftrag
+
+  var item = document.createElement('li')
+  item.innerHTML = name + " kauft um " + zeit + " bei " + laden + " ein!"
+  document.getElementById("FaulerTypAusgabe").appendChild(item)
+
+  auftragid = auftragid + 1
 }
 
 function sendeAuftrag(){
   var inserat = {}
-  inserat.nameAuftraggeber = document.getElementById("nameAuftraggeber").value
-  inserat.einkaufslisteAuftraggeber = document.getElementById("einkaufslisteAuftraggeber").value
+  var einlis = document.getElementById("einkaufslisteAuftraggeber").value
+  einlis = einlis.replace(/,/g, ", " )
+  einlis = einlis.replace(/; /g, ", " )
+  einlis = einlis.replace(/;/g, ", " )
+  einlis = einlis.replace(/,  /g, ", " )
 
-  var reinda = "<b>"
-  reinda = reinda + document.getElementById("nameAuftraggeber").value
-  reinda = reinda + "</b>"
+  inserat.nameAuftraggeber = document.getElementById("nameAuftraggeber").value
+  inserat.einkaufslisteAuftraggeber = einlis.split(", ")
+
+  var reinda ="<div style='background-color: #9090aa'> <ul> <dt> <b>" + document.getElementById("nameAuftraggeber").value + "</b> </dt>"
+  for(i = 0;i < inserat.einkaufslisteAuftraggeber.length; i++){
+    reinda = reinda + "<li>" + inserat.einkaufslisteAuftraggeber[i] + "</li>"
+  }
+
+  reinda = reinda  + " </ul> </div>"
   var item = document.createElement('li')
   item.innerHTML=reinda
   document.getElementById("EinkaeuferAusgabe").appendChild(item);
