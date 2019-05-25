@@ -24,9 +24,11 @@ function sendeAuftrag(){
   inserat.nameAuftraggeber = document.getElementById("nameAuftraggeber").value
   inserat.einkaufslisteAuftraggeber = document.getElementById("einkaufslisteAuftraggeber").value
 
-  var reinda = "<b>" + inserat.nameAuftraggeber + "</b>"
+  var reinda = "<b>"
+  reinda = reinda + document.getElementById("nameAuftraggeber").value
+  reinda = reinda + "</b>"
   var item = document.createElement('li')
-  item.innerHtml=reinda
+  item.innerHTML=reinda
   document.getElementById("EinkaeuferAusgabe").appendChild(item);
 
   console.log("jetzt würde diese Liste an den Host geschickt werden:")
