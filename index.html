@@ -52,7 +52,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#team"class="btn-get-started scrollto">Team</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+
 
 
           <li class="menu-has-children"><a href="">Drop Down</a>
@@ -85,9 +85,9 @@
             <div class="carousel-container">
               <div class="carousel-content">
 
-                <a href="#portfolio" class="btn-get-started scrollto">Einkäufer</a>
+                <a href="#Einkäufer" class="btn-get-started scrollto">Einkäufer</a>
 
-                <a href="#team"class="btn-get-started scrollto">Fauler Typ</a>
+                <a href="#Fauler Typ"class="btn-get-started scrollto">Fauler Typ</a>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
-    <section id="Portfolio"  class="section-bg" >
+    <section id="Einkäufer"  class="section-bg" >
       <div class="container">
 
         <header class="section-header">
@@ -116,13 +116,42 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <ul id="Portfolio-flters">
+            <ul id="Einkäufer-flters">
             </ul>
           </div>
         </div>
-
-
       </div>
+
+      <section id="contact" class="section-bg wow fadeInUp">
+
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Einkaufsorte" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Einkaufsliste"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
     </section>
 
 
@@ -141,6 +170,38 @@
           </div>
         </div>
       </div>
+
+
+      <section id="contact" class="section-bg wow fadeInUp">
+
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
     </section><!-- #portfolio -->
 
 
