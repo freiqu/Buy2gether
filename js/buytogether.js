@@ -46,7 +46,7 @@ function sendeAuftrag(){
   inserat.nameAuftraggeber = document.getElementById("nameAuftraggeber").value
   inserat.einkaufslisteAuftraggeber = einlis.split(", ")
 
-  var reinda ="<div style='background-color: #9090aa'> <ul> <dt> <b>" + document.getElementById("nameAuftraggeber").value + "</b> </dt>"
+  var reinda =" <ul> <dt> <b>" + document.getElementById("nameAuftraggeber").value + "</b> </dt>"
   for(i = 0;i < inserat.einkaufslisteAuftraggeber.length; i++){
     reinda = reinda + "<li>" + inserat.einkaufslisteAuftraggeber[i] + "</li>"
   }
