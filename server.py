@@ -1,4 +1,4 @@
-from bottle import route, run, template, static_file, get
+from bottle import route, run, template, static_file, get, post, request
 
 
 
@@ -26,4 +26,33 @@ def img(pfad):
 def lib(pfad):
     return static_file(pfad, root="./lib")
 
-run(host='localhost', port=8080)
+
+einkaeuferposts=[]
+@post('/einkaeufer')
+def einkaeufer():
+    postdata = request.json
+    einkaeuferposts.append(postdata)
+    print(einkaeuferposts)
+    return
+
+
+
+#run(host='localhost', port=8080)
+run(host='0.0.0.0', port=8080)
+
+
+
+
+
+
+
+
+#$.ajax({
+#                url: 'einkaeufer',
+#                dataType: 'json',
+#                type: 'post',
+#                data: {"test":14},
+#                success: function( data, textStatus, jQxhr ){
+#                    console.log(data);
+#                },
+#})
