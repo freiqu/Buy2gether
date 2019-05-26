@@ -22,16 +22,12 @@ function saveAuftrag(){
 function sendeAuftrag(){
   var inserat = {}
   inserat.nameAuftraggeber = document.getElementById("nameAuftraggeber").value
-<<<<<<< HEAD
   inserat.einkaufslisteAuftraggeber = einlis.split(", ")
 
   var reinda =" <ul> <dt> <b>" + document.getElementById("nameAuftraggeber").value + "</b> </dt>"
   for(i = 0;i < inserat.einkaufslisteAuftraggeber.length; i++){
     reinda = reinda + "<li>" + inserat.einkaufslisteAuftraggeber[i] + "</li>"
   }
-=======
-  inserat.einkaufslisteAuftraggeber = document.getElementById("einkaufslisteAuftraggeber").value
->>>>>>> parent of 04541ac... kot
 
 
   var reinda = "<b>"
